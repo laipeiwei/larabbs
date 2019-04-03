@@ -21,7 +21,7 @@
             @else
                     <li class="nav-item dropdown" style="list-style: none;">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <img src="https://iocaffcdn.phphub.org//uploads/communities/WtC3cPLHzMbKRSZnagU9.png" style="width:30px;height:30px;"/>
+                            <img src="{{ $user->avatar }}" style="width:30px;height:30px;"/>
                             {{ Auth::user()->name }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
