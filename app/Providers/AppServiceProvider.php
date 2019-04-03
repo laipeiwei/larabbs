@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use mysql_xdevapi\Schema;
+use Illuminate\Support\Carbon;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         \Illuminate\Support\Facades\Schema::defaultStringLength(191);
+        Carbon::setLocale('zh');
     }
 }
